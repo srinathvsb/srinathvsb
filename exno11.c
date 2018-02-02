@@ -1,17 +1,13 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<math.h>
 int main()
 {
-int base, exponent;
-long long result = 1;
+double base, exponent, result;
 printf("Enter a base number: ");
-scanf("%d", &base);
+scanf("%lf", &base);
 printf("Enter an exponent: ");
-scanf("%d", &exponent);
-while (exponent != 0)
-{
-result *= base;
---exponent;
-}
-printf("Answer = %lld", result);
+scanf("%lf", &exponent);
+result = pow(base, exponent);
+printf("%.1lf^%.1lf = %.2lf", base, exponent, result);
 return 0;
 }
