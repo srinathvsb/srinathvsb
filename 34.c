@@ -2,7 +2,7 @@
 #include<string.h>
 int main()
 {
-int a,b=0,i;
+int b=0,i;
 char s[1000];
 gets(s);
 for(i=0;s[i]!=NULL;i++)
