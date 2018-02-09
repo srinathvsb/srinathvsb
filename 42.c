@@ -1,28 +1,28 @@
-#include<stdio.h>
-#include<conio.h>
-void main()
+#include <stdio.h>
+#include<string.h>
+int main(void) 
 {
-char s1[100],s2[100];
-int res;
-clrscr();
-printf("Enter S1 and S2:");
+int i;
+char s1[10],s2[10];
 gets(s1);
 gets(s2);
-res=strcmp(s1,s2);
-if(res==0)
-printf("Strings are equal");
-else
-printf("Strings are not equal");
-getch();
+for(i=0;s1[i]!='\0';i++)
+{
+if(s1[i]>s2[i])
+{
+printf("%s is greater",s1);
+break;
 }
-int strcmp(char *s1,char *s2)
+else if(s1[i]<s2[i])
 {
-int i=0;
-while(s1[i]!='\0'||s2[i]!='\0')
+printf("%s is greater",s2);
+break;
+}
+else
 {
-if(s1[i]!=s2[i])
-return (s2[i]-s1[i]);
-i++;
+printf("both are equal");
+break;
+}
 }
 return 0;
 }
