@@ -1,17 +1,17 @@
 #include<stdio.h>
 int main()
 {
-int a,b;
+int x,y;
 printf("\n Enter the numbers:");
-scanf("%d %d",&a,&b);
-swap(a,b);
+scanf("%d %d",&x,&y);
+swap(x,y);
 return 0;
 }
-void swap(int a,int b)
+void swap(int x,int y)
 {
 int temp;
-temp=a;
-a=b;
-b=temp;
-printf("After swapping:%d %d",a,b);
+temp=x;
+x=y;
+y=temp;
+printf("After swapping:%d %d",x,y);
 }
