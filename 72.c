@@ -2,13 +2,13 @@
 #include<string.h>
 void main()
 {
-char a[100];
+char b[100];
 int i,count=0;;
 printf("Enter the string:");
-gets(a);
-for(i=0;i!=strlen(a);i++)
+gets(b);
+for(i=0;i!=strlen(b);i++)
 {
-if(a[i]=='a'||a[i]=='e'||a=='i'||a[i]=='o'||a[i]=='u')
+if(b[i]=='a'||b[i]=='e'||b[i]=='i'||b[i]=='o'||b[i]=='u')
 count++;
 }
 if(count==0)
