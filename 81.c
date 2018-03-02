@@ -1,10 +1,14 @@
-#include<stdio.h>
-#include<math.h>
-void main()
-{
-int ninja,opponent,difference;
-scanf("%d",&ninja);
-scanf("\n%d",&opponent);
-difference=ninja-opponent;
- printf("%d",difference);
- }
+#include <stdio.h>
+int main(void) {
+	int a,b=1,i;
+	for(i=0;i<32;i++)
+	{
+	scanf("%d%d",&a,&b);
+	if(b!=0)
+	{
+	printf("%d\n",b-a);
+	}
+		
+	}
+	return 0;
+}
