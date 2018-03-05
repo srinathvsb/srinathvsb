@@ -2,7 +2,7 @@
 #include<string.h>
 int main(void)
 {
-char ch[100],a[100],b[100];
+char ch[100],X[100],Y[100];
 gets(ch);
 int i,k;
 k=strlen(ch);
