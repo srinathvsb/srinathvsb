@@ -13,6 +13,7 @@ else if(str[i]<91)
 {
 str[i]=str[i]+32;
 }
-}printf("%s",str);
+}
+printf("%s",str);
 return 0;
 }
